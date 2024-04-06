@@ -27,3 +27,10 @@
     left: 344px;
   }
 }
+
+.page {
+  position: absolute;
+  z-index: 2;
+  top: -88px;
+  width: 100%;
+}

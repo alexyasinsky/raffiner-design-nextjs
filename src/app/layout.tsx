@@ -28,7 +28,9 @@ export default function RootLayout({
         <div className={styles.circle_big}></div>
       </div>
       <div className={styles.circle_small}></div>
-      {children}
+      <div className={styles.page}>
+        {children}
+      </div>
     </main>
     <footer></footer>
     </body>
