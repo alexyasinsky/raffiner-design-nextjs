@@ -6,6 +6,7 @@ export default function Home() {
       <ul>
         <li>
           <Link href='/projects'>projects</Link>
+          <p>привет!</p>
         </li>
       </ul>
     </main>
