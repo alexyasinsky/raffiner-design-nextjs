@@ -10,7 +10,9 @@ export default function Header() {
         <Logo/>
         <LanguageSwitcher/>
       </div>
-      <Navigation/>
+      <div>
+        <Navigation/>
+      </div>
     </header>
   )
 }

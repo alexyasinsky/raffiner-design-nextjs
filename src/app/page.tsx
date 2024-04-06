@@ -1,6 +1,11 @@
-
+import styles from './page.module.scss';
 export default function Home() {
   return (
-            <p>привет!</p>
+    <div className={styles.page}>
+
+
+    </div>
+
+
   );
 }

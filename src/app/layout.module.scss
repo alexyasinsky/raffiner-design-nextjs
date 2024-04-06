@@ -1,0 +1,29 @@
+
+
+.circle {
+  border: 1px solid #222;
+  border-radius: 50%;
+  &__wrapper {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    top: -130px;
+    height: calc(100% + 130px);
+  }
+  &_big {
+    @extend .circle;
+    width: 1755px;
+    height: 1755px;
+    margin: auto;
+  }
+  &_small {
+    @extend .circle;
+    width: 1020px;
+    height: 1020px;
+    position: absolute;
+    z-index: 1;
+    top: -88px;
+    left: 344px;
+  }
+}

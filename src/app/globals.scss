@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   width: 1920px;
   min-height: 100vh;
-  padding: 26px 70px;
+  padding: 0 70px;
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +24,10 @@ li {
 }
 main {
   flex-grow: 1;
+  position: relative;
+  height: fit-content;
 }
+
 
 button {
   background: none;

@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {Montserrat} from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/header";
+import styles from './layout.module.scss';
 
 const font = Montserrat({
   weight: ['300'],
@@ -21,8 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body className={font.className}>
-    <Header></Header>
+    <Header/>
     <main>
+      <div className={styles.circle__wrapper}>
+        <div className={styles.circle_big}></div>
+      </div>
+      <div className={styles.circle_small}></div>
       {children}
     </main>
     <footer></footer>
