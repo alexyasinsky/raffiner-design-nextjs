@@ -1,5 +1,12 @@
 
-
 .header {
-  fill: rgba(34, 34, 34, 0.6);
+  display: flex;
+  border-bottom: 1px solid #222;
+  padding-bottom: 26px;
+  justify-content: space-between;
+ >div {
+   display: flex;
+   align-items: center;
+ }
 }
+

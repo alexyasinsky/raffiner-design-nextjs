@@ -20,10 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
-        <Header></Header>
-        {children}
-      </body>
+    <body className={font.className}>
+    <Header></Header>
+    <main>
+      {children}
+    </main>
+    <footer></footer>
+    </body>
     </html>
   );
 }
