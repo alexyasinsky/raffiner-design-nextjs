@@ -38,7 +38,7 @@ export default function Home() {
             height={300}
           />
         </div>
-        <p>Ksy Art</p>
+        <p>2023</p>
       </div>
 
     </div>

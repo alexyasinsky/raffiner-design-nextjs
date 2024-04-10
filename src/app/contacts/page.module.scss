@@ -1,0 +1,60 @@
+.page {
+
+}
+
+
+.title {
+  margin-top: 30px;
+}
+
+.person {
+  position: relative;
+  &__border {
+    width: 658px;
+    height: 651px;
+    border-radius: 0 100px 0 0;
+    border: 1px solid #222;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+  }
+  &__image {
+    width: 658px;
+    height: 651px;
+    border-radius: 0 100px 0 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-wrap: none;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+  }
+}
+
+.content {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  margin-left: 340px;
+  width: 500px;
+  p {
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+  }
+
+
+}
