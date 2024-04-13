@@ -6,7 +6,7 @@ import oks from "../../../public/oks.jpeg";
 export default function Contacts () {
   return (
     <div className={styles.page}>
-      <h1 className={styles.title}>Contacts</h1>
+      <h1 className={'title'}>Contacts</h1>
       <div className={styles.content}>
         <div className={styles.person}>
           <div className={styles.person__border}></div>
@@ -15,6 +15,7 @@ export default function Contacts () {
               src={oks}
               alt='oks'
               height={651}
+              priority
             />
           </div>
           <p>Ksy Art</p>

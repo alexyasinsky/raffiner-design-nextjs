@@ -27,10 +27,6 @@
   }
   p {
     margin-top: 10px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
   }
 }
 
@@ -38,13 +34,6 @@
   position: absolute;
   width: 215px;
   max-height: 200px;
-  p {
-    color: #222;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-  }
   &_left {
     @extend .catchPhrase;
     top: 773px;
@@ -81,9 +70,5 @@
   }
   p {
     margin-top: 10px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
   }
 }
