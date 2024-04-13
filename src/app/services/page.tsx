@@ -10,63 +10,85 @@ export default function Services() {
       <h1 className={'title'}>Better Decisions</h1>
       <p className={'subTitle'}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
         lacus vel facilisis. </p>
-      <Grid contents="cards">
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
+      <Grid contents="cardWithVisibleDescription">
+        <Link href={'/projects/project'}>
+        <Card
+         description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+         cardType='cardWithVisibleDescription'
+        >
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
         </Card>
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
-        </Card>
+        </Link>
+        <Link href={'/projects/project'}>
+          <Card
+            description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+            cardType='cardWithVisibleDescription'
+          >
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
+          </Card>
+        </Link>
 
       </Grid>
-      <Grid contents="cards">
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
-        </Card>
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
-        </Card>
+      <Grid contents="cardWithVisibleDescription">
+        <Link href={'/projects/project'}>
+          <Card
+            description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+            cardType='cardWithVisibleDescription'
+          >
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
+          </Card>
+        </Link>
+        <Link href={'/projects/project'}>
+          <Card
+            description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+            cardType='cardWithVisibleDescription'
+          >
+
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
+
+          </Card>
+        </Link>
 
       </Grid>
-      <Grid contents="cards">
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
-        </Card>
-        <Card>
-          <Link href={'/projects/project'}>
-            <Photo size="card"/>
-            <p>
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis
-            </p>
-          </Link>
-        </Card>
+      <Grid contents="cardWithVisibleDescription">
+        <Link href={'/projects/project'}>
+          <Card
+            description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+            cardType='cardWithVisibleDescription'
+          >
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
+          </Card>
+        </Link>
+        <Link href={'/projects/project'}>
+          <Card
+            description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+            cardType='cardWithVisibleDescription'
+          >
+            <Photo
+              size="card"
+              image='dining-room.jpeg'
+            />
+
+          </Card>
+        </Link>
 
       </Grid>
+
 
     </>
   )

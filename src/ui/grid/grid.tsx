@@ -2,7 +2,7 @@ import styles from './grid.module.scss';
 import {ReactNode} from "react";
 
 type TProps = {
-  contents: 'photos' | 'cards'
+  contents: 'cardWithHiddenDescription' | 'cardWithVisibleDescription'
   children: ReactNode
 }
 export default function Grid ({contents, children}: TProps) {

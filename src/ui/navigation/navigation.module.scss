@@ -12,6 +12,9 @@
     line-height: 140%; /* 25.2px */
     letter-spacing: 5.4px;
     text-transform: uppercase;
+    &:hover {
+      color: rgba(34, 34, 34, 0.60);
+    }
   }
 }
 

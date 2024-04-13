@@ -1,11 +1,11 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  &_photos {
+  &_cardWithHiddenDescription {
     @extend .wrapper;
     margin-bottom: 30px;
   }
-  &_cards {
+  &_cardWithVisibleDescription {
     @extend .wrapper;
     margin-bottom: 50px;
   }

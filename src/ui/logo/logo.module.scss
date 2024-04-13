@@ -4,11 +4,12 @@
   width: 313px;
   height: 66px;
   svg path {
-    fill: rgba(34, 34, 34, 0.6);
+    fill: #222;
   }
+
   &:hover {
     svg path {
-      fill: #222;
+      fill: rgba(34, 34, 34, 0.6);
     }
   }
 }
