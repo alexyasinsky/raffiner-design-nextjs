@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &_small {
+    @extend .wrapper;
+    width: 423px;
+    height: 369px;
+  }
+
+  &_medium {
+    @extend .wrapper;
+    height: 500px;
+    width: 573px;
+  }
+
+  &_large {
+    @extend .wrapper;
+    height: 500px;
+    width: 875px;
+  }
+
+  &_extra-large {
+    @extend .wrapper;
+    width: 1780px;
+    height: 900px;
+  }
+
+  &_card {
+    @extend .wrapper;
+    width: 875px;
+    height: 700px;
+  }
+
+  img {
+    width: 100%;
+    height: fit-content;
+  }
+}

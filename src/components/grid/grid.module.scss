@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  &_photos {
+    @extend .wrapper;
+    margin-bottom: 30px;
+  }
+  &_cards {
+    @extend .wrapper;
+    margin-bottom: 50px;
+  }
+}
