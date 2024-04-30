@@ -26,7 +26,8 @@ li {
 main {
   flex-grow: 1;
   position: relative;
-  height: fit-content;
+  overflow: hidden;
+  margin-top: -130px;
 }
 
 
@@ -43,7 +44,6 @@ button {
   line-height: 100%; /* 120px */
   letter-spacing: 18px;
   text-transform: uppercase;
-  margin-top: 30px;
 }
 
 .subTitle {

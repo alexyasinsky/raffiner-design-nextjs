@@ -24,9 +24,7 @@ export default function RootLayout({
     <body className={font.className}>
     <Header/>
     <main>
-      <div className={styles.circle__wrapper}>
-        <div className={styles.circle_big}></div>
-      </div>
+      <div className={styles.circle_big}></div>
       <div className={styles.circle_small}></div>
       <div className={styles.page}>
         {children}

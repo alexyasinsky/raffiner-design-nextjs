@@ -2,13 +2,12 @@ import styles from './grid.module.scss';
 import {ReactNode} from "react";
 
 type TProps = {
-  contents: 'cardWithHiddenDescription' | 'cardWithVisibleDescription'
   children: ReactNode
 }
-export default function Grid ({contents, children}: TProps) {
+export default function Grid ({children}: TProps) {
 
   return (
-    <div className={styles[`wrapper_${contents}`]}>
+    <div className={styles.wrapper}>
       {children}
     </div>
   )

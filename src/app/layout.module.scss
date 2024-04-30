@@ -3,18 +3,11 @@
 .circle {
   border: 1px solid #222;
   border-radius: 50%;
-  &__wrapper {
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    top: -130px;
-    height: calc(100% + 130px);
-  }
   &_big {
     @extend .circle;
     width: 1755px;
     height: 1755px;
+    position: absolute;
     margin: auto;
   }
   &_small {
@@ -22,14 +15,13 @@
     width: 1020px;
     height: 1020px;
     position: absolute;
-    z-index: 1;
-    top: -88px;
+    top: 42px;
     left: 344px;
   }
 }
 
 .page {
-  position: absolute;
-  z-index: 2;
   width: 100%;
+  margin-top: 120px;
+  padding-top: 30px;
 }

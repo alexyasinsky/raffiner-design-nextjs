@@ -1,12 +1,5 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  &_cardWithHiddenDescription {
-    @extend .wrapper;
-    margin-bottom: 30px;
-  }
-  &_cardWithVisibleDescription {
-    @extend .wrapper;
-    margin-bottom: 50px;
-  }
+  margin-bottom: 30px;
 }

@@ -1,12 +1,14 @@
 .wrapper {
   position: relative;
   width: min-content;
-
   p {
     text-align: center;
   }
   &_cardWithVisibleDescription {
     @extend .wrapper;
+    p {
+      margin-bottom: 20px;
+    }
   }
   &_cardWithHiddenDescription {
     @extend .wrapper;
