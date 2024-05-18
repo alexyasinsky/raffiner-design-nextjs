@@ -57,10 +57,7 @@ export default function Services() {
           image='dining-room.jpeg'
         >
         </Card>
-
       </Grid>
-
-
     </>
   )
 }

@@ -8,7 +8,7 @@ export default function Project() {
       <h1 className={'title'}>Quis ipsum suspendisse</h1>
       <p className={'subTitle'}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
         vel facilisis. </p>
-      <Grid contents="cardWithHiddenDescription">
+      <Grid>
         <Card
           cardType="cardWithHiddenDescription"
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
@@ -24,7 +24,7 @@ export default function Project() {
         >
         </Card>
       </Grid>
-      <Grid contents="cardWithHiddenDescription">
+      <Grid>
         <Card
           cardType="cardWithHiddenDescription"
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
