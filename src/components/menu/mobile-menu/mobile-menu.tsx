@@ -15,7 +15,7 @@ export default function MobileMenu ({closeHandler, status, pages}: TProps) {
   return (
     <div className={`padding-site ${styles[`menu_${status}`]} `}>
       <div
-        className={styles.closeWrapper}
+        className={styles.close}
         onClick={closeHandler}
       >
         <Union/>
