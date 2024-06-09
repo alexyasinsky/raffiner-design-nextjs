@@ -1,14 +1,33 @@
 
 
 .language {
-  margin-left: 70px;
   display: flex;
   button {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
     padding: 10px;
     letter-spacing: 5.4px;
     text-transform: uppercase;
     &:hover {
       color: rgba(34, 34, 34, 0.60);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .language {
+    button {
+      font-size: 51px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .language {
+    button {
+      font-size: 18px;
     }
   }
 }

@@ -10,14 +10,14 @@ export default function Project() {
         vel facilisis. </p>
       <Grid>
         <Card
-          cardType="cardWithHiddenDescription"
+          descriptionType="hidden"
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
           size="large"
           image='dining-room.jpeg'
         >
         </Card>
         <Card
-          cardType="cardWithHiddenDescription"
+          descriptionType="hidden"
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
           size="large"
           image='dining-room.jpeg'
@@ -26,7 +26,7 @@ export default function Project() {
       </Grid>
       <Grid>
         <Card
-          cardType="cardWithHiddenDescription"
+          descriptionType="hidden"
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
           size="extra-large"
           image='dining-room.jpeg'

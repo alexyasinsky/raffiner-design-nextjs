@@ -1,0 +1,28 @@
+@import "src/app/variables";
+
+.menu {
+  background-color: $backgroundColor;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  transition: right 1s;
+  padding-top: 71px;
+  &_closed {
+    @extend .menu;
+    right: -100%;
+  }
+  &_opened {
+    @extend .menu;
+    right: 0;
+  }
+}
+
+.close {
+  float: right;
+}
+
+.languageSwitcherWrapper {
+  margin-top: 227px;
+}
+

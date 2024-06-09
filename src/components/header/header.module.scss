@@ -1,18 +1,35 @@
 
-.header {
-  width: 100%;
-  border-bottom: 1px solid #222;
+.wrapper {
   position: relative;
-  height: 118px;
- >div {
-   display: flex;
-   align-items: center;
-   position: absolute;
-   z-index: 10;
-   height: 100%;
-   &:last-child {
-     right: 0;
-   }
- }
+  >div {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+    width: 100%;
+  }
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    >div {
+      height: 191px;
+    }
+  }
+  .back {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    >div {
+      height: 118px;
+    }
+  }
+  .back {
+    display: none;
+  }
+}

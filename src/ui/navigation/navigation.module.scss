@@ -1,12 +1,24 @@
 .list {
   display: flex;
-  align-items: center;
-  height: 100%;
+
+  &_column {
+   flex-direction: column;
+    li {
+      margin-bottom: 57px;
+    }
+  }
+
+  &_row {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    li {
+      margin-left: 50px;
+    }
+  }
 
   li {
-    margin-left: 50px;
     color: #222;
-    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 25.2px */
@@ -22,3 +34,18 @@
   color: rgba(34, 34, 34, 0.60);
 }
 
+@media (max-width: 1024px) {
+  .list {
+    li {
+      font-size: 51px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .list {
+    li {
+      font-size: 18px;
+    }
+  }
+}

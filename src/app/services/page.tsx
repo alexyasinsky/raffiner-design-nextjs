@@ -11,14 +11,14 @@ export default function Services() {
       <Grid>
         <Card
          description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-         cardType='cardWithVisibleDescription'
+         descriptionType="visible"
          size="card"
          image='dining-room.jpeg'
         >
         </Card>
         <Card
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          cardType='cardWithVisibleDescription'
+          descriptionType="visible"
           size="card"
           image='dining-room.jpeg'
         >
@@ -28,14 +28,14 @@ export default function Services() {
       <Grid>
         <Card
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          cardType='cardWithVisibleDescription'
+          descriptionType="visible"
           size="card"
           image='dining-room.jpeg'
         >
         </Card>
         <Card
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          cardType='cardWithVisibleDescription'
+          descriptionType="visible"
           size="card"
           image='dining-room.jpeg'
         >
@@ -45,14 +45,14 @@ export default function Services() {
       <Grid>
         <Card
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          cardType='cardWithVisibleDescription'
+          descriptionType="visible"
           size="card"
           image='dining-room.jpeg'
         >
         </Card>
         <Card
           description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          cardType='cardWithVisibleDescription'
+          descriptionType="visible"
           size="card"
           image='dining-room.jpeg'
         >

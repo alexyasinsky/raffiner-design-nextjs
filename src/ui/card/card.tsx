@@ -3,18 +3,18 @@ import Photo from "@/ui/photo/photo";
 
 type TProps = {
   description?: string
-  cardType?: 'cardWithHiddenDescription' | 'cardWithVisibleDescription'
+  descriptionType?: 'hidden' | 'visible'
   size: 'small' | 'medium' | 'large' | 'extra-large' | 'card'
   image: string
 }
-export default function Card ({description, cardType, size, image}: TProps) {
+export default function Card ({description, descriptionType, size, image}: TProps) {
   return (
-    <div className={styles[`wrapper_${cardType}`]}>
+    <div className={descriptionType? styles[`wrapper_${descriptionType}`] : ''}>
       <Photo
         size={size}
         image={image}
       />
-      <p>{description}</p>
+      { description && <p>{description}</p> }
     </div>
   )
 }

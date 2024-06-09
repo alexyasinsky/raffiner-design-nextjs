@@ -5,7 +5,7 @@ export default function Logo () {
 
   return (
     <Link className={styles.logo} href='/'>
-      <svg width="313" height="66" viewBox="0 0 313 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 313 66" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M0 65.9959H20.2557C30.4361 65.9959 38.689 57.7835 38.689 47.6529C38.689 37.5223 30.4361 29.3098 20.2558 29.3098H0V32.1222H20.2558C28.8753 32.1222 35.8628 39.0755 35.8628 47.6529C35.8628 56.2302 28.8753 63.1836 20.2557 63.1836H0V65.9959Z"
           fill="#222222" />

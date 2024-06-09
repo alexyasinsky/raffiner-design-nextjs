@@ -1,0 +1,27 @@
+
+
+.desktop {
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 70px;
+}
+
+
+@media (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+}
+

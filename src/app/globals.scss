@@ -1,3 +1,4 @@
+@import "variables";
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,10 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: $backgroundColor;
   margin: 0 auto;
-  width: 1920px;
   min-height: 100vh;
-  padding: 0 70px;
+
   display: flex;
   flex-direction: column;
   color: #222;
@@ -27,9 +27,7 @@ main {
   flex-grow: 1;
   position: relative;
   overflow: hidden;
-  margin-top: -130px;
 }
-
 
 button {
   background: none;
@@ -41,7 +39,7 @@ button {
   text-align: center;
   font-size: 120px;
   font-weight: 275;
-  line-height: 100%; /* 120px */
+  line-height: 100%;
   letter-spacing: 18px;
   text-transform: uppercase;
 }
@@ -56,3 +54,33 @@ p {
   font-weight: 400;
   line-height: 140%;
 }
+
+
+
+@media (min-width: 1025px) {
+
+  body {
+    width: 1780px;
+  }
+
+  .margin-site {
+    margin: 0 70px;
+  }
+  .padding-site {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 1024px){
+
+  body {
+    width: 1024px;
+  }
+  .margin-site {
+    margin: 0 85px;
+  }
+  .padding-site {
+    padding: 0 85px;
+  }
+}
+

@@ -7,7 +7,7 @@ export default function Projects() {
   const card = {
     link: '',
     size: '',
-    cardType: '',
+    descriptionType: '',
     image: '',
     description: ''
   }
@@ -19,7 +19,7 @@ export default function Projects() {
       <Grid>
         <Link href={'/projects/project'}>
           <Card
-            cardType="cardWithHiddenDescription"
+            descriptionType="hidden"
             description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
             size="small"
             image='dining-room.jpeg'
@@ -28,7 +28,7 @@ export default function Projects() {
         </Link>
         <Link href={'/projects/project'}>
           <Card
-            cardType="cardWithHiddenDescription"
+            descriptionType="hidden"
             description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
             size="small"
             image='dining-room.jpeg'
@@ -37,7 +37,7 @@ export default function Projects() {
         </Link>
         <Link href={'/projects/project'}>
           <Card
-            cardType="cardWithHiddenDescription"
+            descriptionType="hidden"
             description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
             size="small"
             image='dining-room.jpeg'
@@ -46,7 +46,7 @@ export default function Projects() {
         </Link>
         <Link href={'/projects/project'}>
           <Card
-            cardType="cardWithHiddenDescription"
+            descriptionType="hidden"
             description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
             size="small"
             image='dining-room.jpeg'
