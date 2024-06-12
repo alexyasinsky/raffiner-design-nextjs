@@ -9,6 +9,7 @@ body {
   background: $backgroundColor;
   margin: 0 auto;
   min-height: 100vh;
+  min-width: 360px;
 
   display: flex;
   flex-direction: column;
@@ -57,30 +58,32 @@ p {
 
 
 
-@media (min-width: 1025px) {
+
+
+@media (max-width: 1365px){
 
   body {
-    width: 1780px;
+    max-width: 1365px;
   }
-
   .margin-site {
-    margin: 0 70px;
+    margin: 0 8%;
   }
   .padding-site {
-    padding: 0 70px;
+    padding: 0 8%;
   }
 }
 
-@media (max-width: 1024px){
+@media (min-width: 1366px) {
 
   body {
-    width: 1024px;
+    max-width: 1920px;
   }
+
   .margin-site {
-    margin: 0 85px;
+    margin: 0 4%;
   }
   .padding-site {
-    padding: 0 85px;
+    padding: 0 4%;
   }
 }
 

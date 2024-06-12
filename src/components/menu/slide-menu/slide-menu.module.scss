@@ -7,7 +7,7 @@
   height: 100vh;
   top: 0;
   transition: right 1s;
-  padding-top: 71px;
+  padding-top: 25px;
   &_closed {
     @extend .menu;
     right: -100%;
@@ -23,6 +23,6 @@
 }
 
 .languageSwitcherWrapper {
-  margin-top: 227px;
+  margin-top: 80px;
 }
 

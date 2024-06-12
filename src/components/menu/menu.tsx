@@ -6,7 +6,7 @@ import Navigation from "@/ui/navigation/navigation";
 import styles from './menu.module.scss';
 import {useState} from "react";
 import Burger from "@/ui/burger/burger";
-import MobileMenu from "@/components/menu/mobile-menu/mobile-menu";
+import SlideMenu from "@/components/menu/slide-menu/slide-menu";
 
 const pages = [
   {
@@ -43,7 +43,7 @@ export default function Menu() {
         <div onClick={() => setIsMenuOpened(!isMenuOpened)}>
           <Burger/>
         </div>
-        <MobileMenu closeHandler={toggleMenu} status={isMenuOpened ? 'opened' : 'closed'} pages={pages}/>
+        <SlideMenu closeHandler={toggleMenu} status={isMenuOpened ? 'opened' : 'closed'} pages={pages}/>
       </div>
     </>
 

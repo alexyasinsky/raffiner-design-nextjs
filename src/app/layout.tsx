@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, Viewport} from "next";
 import {Montserrat} from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/header";
@@ -13,10 +13,11 @@ export const metadata: Metadata = {
   description: "",
 };
 
-// export const viewport: Viewport = {
-//   width: 'device-width',
-//   initialScale: 1,
-// }
+export const viewport: Viewport = {
+  width: 'device-width',
+  // initialScale: 0,
+  // userScalable: true
+}
 
 
 
