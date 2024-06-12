@@ -1,25 +1,62 @@
 .circle {
   border: 1px solid #222;
   border-radius: 50%;
+  position: absolute;
   &_big {
-    @extend .circle;
-    width: 1755px;
-    height: 1755px;
-    position: absolute;
-    margin: auto;
+    z-index: 1;
   }
   &_small {
-    @extend .circle;
-    width: 1020px;
-    height: 1020px;
-    position: absolute;
-    top: 42px;
-    left: 344px;
+    z-index: 3;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .page {
   width: 100%;
-  margin-top: 120px;
-  padding-top: 30px;
 }
+
+@media (max-width: 1365px) {
+  .circle {
+    &_big {
+      width: 847px;
+      height: 847px;
+      margin-top: 93px;
+    }
+    &_small {
+      width: 491px;
+      height: 491px;
+      margin-top: 114px;
+    }
+  }
+  .page {
+    margin-top: 67px;
+    padding-top: 27px;
+  }
+}
+@media (min-width: 1366px) {
+  .circle {
+    &_big {
+      width: 1780px;
+      height: 1780px;
+      margin-top: -12px;
+    }
+    &_small {
+      width: 1020px;
+      height: 1020px;
+      margin-right: 35px;
+      margin-top: 42px;
+    }
+  }
+
+  .page {
+    margin-top: 120px;
+    padding-top: 30px;
+    position: relative;
+  }
+
+}
+

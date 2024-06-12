@@ -1,8 +1,39 @@
 
-.page {
-  position: relative;
-  top: -108px;
+
+.banner {
+  border-radius: 50%;
+  position: unset !important;
+  &__container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
+
+@media (max-width: 1365px) {
+  .banner {
+    width: 510px !important;
+    height: 510px !important;
+    &__container {
+      z-index: 4;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .banner {
+    width: 1020px !important;
+    height: 1020px !important;
+    margin-left: 35px;
+    margin-top: -109px;
+    &__container {
+      z-index: 2;
+    }
+  }
+
+}
+
 
 .person {
   position: absolute;
