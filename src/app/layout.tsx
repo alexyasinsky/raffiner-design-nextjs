@@ -37,7 +37,7 @@ export default function RootLayout({
         <div className={`${styles.circle} ${styles.circle_big}`}></div>
         <div className={`${styles.circle} ${styles.circle_small}`}></div>
       </div>
-      <div className={styles.page}>
+      <div className='page__container'>
         {children}
       </div>
     </main>
