@@ -1,5 +1,5 @@
 import styles from './card.module.scss';
-import Photo from "@/ui/photo/photo";
+import Photo from "@/components/photo/photo";
 
 type TProps = {
   description?: string

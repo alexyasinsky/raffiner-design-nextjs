@@ -2,7 +2,7 @@
 
 import {usePathname} from 'next/navigation'
 import LanguageSwitcher from "@/ui/language-switcher/language-switcher";
-import Navigation from "@/ui/navigation/navigation";
+import Navigation from "@/components/navigation/navigation";
 import styles from './menu.module.scss';
 import {useState} from "react";
 import Burger from "@/ui/burger/burger";

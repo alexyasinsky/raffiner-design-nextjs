@@ -1,13 +1,16 @@
-import Grid from "@/ui/grid/grid";
-import Card from "@/ui/card/card";
+import Grid from "@/components/grid/grid";
+import Card from "@/components/card/card";
+import PageWrapper from "@/components/page-wrapper/page-wrapper";
 
 
 export default function Services() {
   return (
-    <>
-      <h1 className={'title'}>Better Decisions</h1>
-      <p className={'subTitle'}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-        lacus vel facilisis. </p>
+    <PageWrapper
+     name='Услуги'
+     title='Better Decisions'
+     subTitle='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+        lacus vel facilisis.'
+    >
       <Grid>
         <Card
          description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
@@ -58,6 +61,6 @@ export default function Services() {
         >
         </Card>
       </Grid>
-    </>
+    </PageWrapper>
   )
 }

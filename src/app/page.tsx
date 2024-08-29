@@ -2,7 +2,7 @@ import styles from './page.module.scss';
 import Image from "next/image";
 import oks from '../../public/oks.jpeg';
 import room from '../../public/dining-room.jpeg'
-import Navigation from "@/ui/navigation/navigation";
+import Navigation from "@/components/navigation/navigation";
 
 export default function Home() {
 

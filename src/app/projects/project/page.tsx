@@ -1,5 +1,5 @@
-import Grid from "@/ui/grid/grid";
-import Card from "@/ui/card/card";
+import Grid from "@/components/grid/grid";
+import Card from "@/components/card/card";
 
 
 export default function Project() {

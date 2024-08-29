@@ -1,5 +1,5 @@
-import Card from "@/ui/card/card";
-import Grid from "@/ui/grid/grid";
+import Card from "@/components/card/card";
+import Grid from "@/components/grid/grid";
 import Link from 'next/link';
 
 import PageWrapper from "@/components/page-wrapper/page-wrapper";

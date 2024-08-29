@@ -1,6 +1,6 @@
 import Union from "@/ui/union/union";
 import styles from './slide-menu.module.scss';
-import Navigation from "@/ui/navigation/navigation";
+import Navigation from "@/components/navigation/navigation";
 import {TMenuItem} from "@/utils/types";
 import LanguageSwitcher from "@/ui/language-switcher/language-switcher";
 

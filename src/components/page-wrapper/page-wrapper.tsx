@@ -5,7 +5,7 @@ import React from "react";
 type TProps = {
   name: string;
   title: string;
-  subTitle: string;
+  subTitle?: string;
   children: React.ReactNode;
 }
 
