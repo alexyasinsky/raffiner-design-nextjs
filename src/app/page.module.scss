@@ -113,7 +113,6 @@
 
 .year {
   width: 100%;
-  text-align: right;
 }
 
 @media (min-width: 360px) {
@@ -190,7 +189,8 @@
     }
   }
   .year {
-    text-align: right;
+    text-align: left;
+    padding-left: 41px;
   }
   .menu {
     display: block;
@@ -239,6 +239,9 @@
   }
   .row {
     margin-bottom: 110px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 }
 
