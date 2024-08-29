@@ -38,20 +38,6 @@ button {
   font-family: inherit;
 }
 
-.title {
-  text-align: center;
-  font-size: 120px;
-  font-weight: 275;
-  line-height: 100%;
-  letter-spacing: 18px;
-  text-transform: uppercase;
-}
-
-.subTitle {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
 p {
   font-size: 18px;
   font-weight: 400;
@@ -71,7 +57,6 @@ p {
 
 
 @media (max-width: 1439px) {
-
 
   .margin-site {
     margin: 0 8%;
