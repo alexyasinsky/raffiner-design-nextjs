@@ -1,5 +1,48 @@
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.wrapper{
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: dense;
+}
+
+.item {
+  width: 100%;
+  overflow: hidden;
+  &_small, &_medium, &_large {
+    @extend .item
+  }
+}
+
+@media (min-width: 360px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item {
+    &_medium, &_large {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .item {
+    &_small {
+      grid-column: span 2;
+    }
+    &_medium {
+      grid-column: span 3;
+    }
+    &_large {
+      grid-column: span 6;
+    }
+  }
 }

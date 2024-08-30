@@ -1,30 +1,56 @@
 .wrapper {
   position: relative;
-  width: min-content;
-  p {
-    text-align: center;
-  }
-  &_cardWithVisibleDescription {
-    @extend .wrapper;
-    p {
-      margin-bottom: 20px;
-    }
-  }
-  &_cardWithHiddenDescription {
-    @extend .wrapper;
-    p {
-      position: absolute;
-      top: 0;
-      color: #FFF;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.3);
-      visibility: hidden;
-    }
-  }
-  &_cardWithHiddenDescription:hover {
-    @extend .wrapper;
-    p {
+  height: 100%;
+  &:hover {
+    .description_hidden {
       visibility: visible;
     }
+  }
+}
+
+.description {
+  text-align: center;
+  &_hidden {
+    @extend .description;
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+  }
+}
+
+
+.image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  img {
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    object-position: center;
+
+  }
+}
+
+@media (min-width: 360px) {
+  .image {
+    max-height: 262px;
+  }
+}
+
+@media (min-width: 768px) {
+  .image {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image {
+    max-height: unset;
   }
 }

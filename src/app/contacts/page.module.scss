@@ -1,30 +1,3 @@
-//.person {
-//  position: relative;
-//  &__border {
-//    width: 658px;
-//    height: 651px;
-//    border-radius: 0 100px 0 0;
-//    border: 1px solid #222;
-//    position: absolute;
-//    top: -40px;
-//    left: 40px;
-//  }
-//  &__image {
-//    width: 658px;
-//    height: 651px;
-//    border-radius: 0 100px 0 0;
-//    overflow: hidden;
-//    display: flex;
-//    justify-content: center;
-//    align-items: flex-end;
-//  }
-//  p {
-//    position: absolute;
-//    right: -100px;
-//    bottom: 0;
-//  }
-//}
-
 .person {
   display: flex;
   flex-direction: column;
@@ -94,14 +67,14 @@
     padding: unset;
     text-align: left;
     max-width: 300px;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .details {
     max-width: 400px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
   .person {
     &__image, &__border {

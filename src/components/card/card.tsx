@@ -1,20 +1,28 @@
+'use client'
+
 import styles from './card.module.scss';
-import Photo from "@/components/photo/photo";
+import Image from "next/image";
 
 type TProps = {
   description?: string
-  descriptionType?: 'hidden' | 'visible'
-  size: 'small' | 'medium' | 'large' | 'extra-large' | 'card'
+  isDescriptionHidden: boolean
   image: string
 }
-export default function Card ({description, descriptionType, size, image}: TProps) {
+export default function Card ({description, isDescriptionHidden, image}: TProps) {
+
   return (
-    <div className={descriptionType? styles[`wrapper_${descriptionType}`] : ''}>
-      <Photo
-        size={size}
-        image={image}
-      />
-      { description && <p>{description}</p> }
+    <div className={styles.wrapper}>
+      <div className={styles.image}>
+        <Image
+          src={`/${image}`}
+          alt='image'
+          width={1980}
+          height={1024}
+        />
+      </div>
+      { description && <p
+        className={isDescriptionHidden? styles.description_hidden : styles.description}
+      >{description}</p> }
     </div>
   )
 }

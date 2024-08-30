@@ -1,39 +1,47 @@
 import Grid from "@/components/grid/grid";
-import Card from "@/components/card/card";
+import PageWrapper from "@/components/page-wrapper/page-wrapper";
+import {TCard} from "@/utils/types";
 
 
 export default function Project() {
-  return (
-    <>
-      <h1 className={'title'}>Quis ipsum suspendisse</h1>
-      <p className={'subTitle'}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
-        vel facilisis. </p>
-      <Grid>
-        <Card
-          descriptionType="hidden"
-          description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          size="large"
-          image='dining-room.jpeg'
-        >
-        </Card>
-        <Card
-          descriptionType="hidden"
-          description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          size="large"
-          image='dining-room.jpeg'
-        >
-        </Card>
-      </Grid>
-      <Grid>
-        <Card
-          descriptionType="hidden"
-          description='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
-          size="extra-large"
-          image='dining-room.jpeg'
-        >
-        </Card>
-      </Grid>
 
-    </>
+  const cards: TCard[] = [
+    {
+      size: 'large',
+      isDescriptionHidden: true,
+      image: 'dining-room.jpeg',
+      description: 'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+    },
+    {
+      size: 'small',
+      isDescriptionHidden: true,
+      image: 'living-room.jpeg',
+      description: 'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+    },
+    {
+      size: 'small',
+      isDescriptionHidden: true,
+      image: 'living-room-4.jpeg',
+      description: 'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+    },
+    {
+      size: 'small',
+      isDescriptionHidden: true,
+      image: 'living-room-4.jpeg',
+      description: 'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis'
+    }
+]
+  return (
+    <PageWrapper
+        name='Проекты'
+        title='Quis ipsum'
+        subTitle='Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+        vel facilisis.'
+        >
+      <div className='margin-site'>
+        <Grid items={cards}/>
+      </div>
+
+    </PageWrapper>
   )
 }

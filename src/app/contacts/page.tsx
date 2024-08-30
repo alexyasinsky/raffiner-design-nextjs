@@ -1,26 +1,25 @@
-
 import styles from './page.module.scss';
 import Image from "next/image";
 import oks from "../../../public/oks.jpeg";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
 
-export default function Contacts () {
+export default function Contacts() {
   return (
     <PageWrapper
       name='Контакты'
       title='Contacts'
     >
       <div className={`${styles.content} margin-site`}>
-      <div className={styles.person}>
-        <div className={styles.person__border}></div>
-        <div className={styles.person__image}>
-          <Image
-            src={oks}
-            alt='oks'
-          />
+        <div className={styles.person}>
+          <div className={styles.person__border}></div>
+          <div className={styles.person__image}>
+            <Image
+              src={oks}
+              alt='oks'
+            />
+          </div>
+          <p className={styles.name}>Ksy Art</p>
         </div>
-        <p className={styles.name}>Ksy Art</p>
-      </div>
 
         <div className={styles.details}>
           <p className={styles.catchPhrase}>
