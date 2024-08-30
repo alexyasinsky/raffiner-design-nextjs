@@ -17,7 +17,6 @@ export default function Contacts () {
           <Image
             src={oks}
             alt='oks'
-            height={300}
           />
         </div>
         <p className={styles.name}>Ksy Art</p>
